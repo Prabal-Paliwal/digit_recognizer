@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8.0/dist/tf.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Digit Recognizer</h1>
+    </nav>
+    <main id="main">
+        <canvas id="c" width="28" , height="28"></canvas>
+        <button onclick="clicked();" style="width:100px; height:100px;">PREDICT</button>
+        <div class="scoreboard">
+        <div class="score"><span class="numbers">0</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">1</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">2</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">3</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">4</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">5</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">6</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">7</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">8</span><div class="bar"><div class="barW"></div></div></div>
+        <div class="score"><span class="numbers">9</span><div class="bar"><div class="barW"></div></div></div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
